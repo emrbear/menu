@@ -1,0 +1,10 @@
+%div
+  %div
+    =link_to(carte.title, edit_carte_url(carte))
+  %div
+    =carte.subtitle
+  %div
+    =carte.position
+  %div
+    =button_to "x", carte_url(carte),  method: :delete
+

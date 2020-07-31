@@ -1,1 +1,9 @@
 = link_to("Add Menu", new_carte_url)
+
+%div
+  -if @cartes.empty?
+    No cartes yet
+  -else
+    %h4
+      Cartes
+    =render partial: 'carte', collection: @cartes
